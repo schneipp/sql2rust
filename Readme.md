@@ -1,4 +1,4 @@
-#SQL2RUST
+## SQL2RUST
 
 ![Imgur](https://i.imgur.com/JerUC1O.gif)
 
