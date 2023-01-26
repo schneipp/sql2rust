@@ -32,26 +32,6 @@ fn main() {
     let buffer = lines_vec.join("\n");
 
     //convert sql create statement to rust struct
-    
-    //extract create fields
-    /*
-CREATE TABLE [dbo].[mandantor](
-	[idmandantor] [int] IDENTITY(1,1) NOT NULL,
-	[idintegration] [int] NULL,
-	[idsenderaddress] [int] NULL,
-	[name] [nvarchar](135) NOT NULL,
-	[description] [nvarchar](450) NULL,
-	[deleted] [bit] NOT NULL,
-	[editedby] [int] NOT NULL,
-	[SysStartTime] [datetime2](7) GENERATED ALWAYS AS ROW START NOT NULL,
-	[SysEndTime] [datetime2](7) GENERATED ALWAYS AS ROW END NOT NULL,
-	[privatekey] [nvarchar](450) NULL,
-	[publickey] [nvarchar](450) NULL,
-	[email] [nvarchar](450) NULL,
-	[needsreturnlabel] [bit] NOT NULL,
-	PERIOD FOR SYSTEM_TIME ([SysStartTime], [SysEndTime])        
-*/
-
     let re = Regex::new(r"(CREATE TABLE \[dbo\]\.\[([a-zA-Z_\-]+)\]\()").unwrap();
     let re_fields = Regex::new(r"\[([a-zA-Z_\-]+)\] \[([a-zA-Z_\-]+)\]").unwrap();
     let mut struct_name = "".to_string();
