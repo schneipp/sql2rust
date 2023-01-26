@@ -1,6 +1,6 @@
 #SQL2RUST
 
-![Imgur](https://imgur.com/JerUC1O)
+![Imgur](https://i.imgur.com/JerUC1O.gif)
 
 Convert your mssql create table Statements to Rust structs.
 How do i use it you ask?
