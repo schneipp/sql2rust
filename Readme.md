@@ -8,16 +8,16 @@ How do i use it you ask?
 
 I don't know - but i can tell you how I use it:
 
-In Azure Data Studio:
+In azure data studio:
 
-1) Right Click any Table and select "Script as Create"
+1) rightclick on any table and select "Script as Create"
 
-2) Select the relevant part (Create Table.. until the last field)
+2) select the relevant part ("Create Table.. until the last field)
 
-3) Paste the Selection into any Editor that supports stdin/stdout operations (of course (n)vim or helix)
+3) paste the selection into any editor that supports stdin/stdout operations (of course (n)vim or helix)
 
-4) Select the lines and type
+4) select the lines and type
 
 5) :!sql2rust
 
-6) Experience a wide range of bugs and create an issue here
+6) experience a wide range of bugs and create an issue here
